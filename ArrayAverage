@@ -1,0 +1,12 @@
+double go( int a ) 
+{
+    int sum = 0;
+    int count = 0;
+    while (a>0)
+    {
+        sum = sum+(a%10);
+        count++;
+        a=a/10;
+    }
+    return ((double)sum/count);
+}
