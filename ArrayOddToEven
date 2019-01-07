@@ -1,0 +1,19 @@
+int go( int[] array ) 
+{
+   for(int i=0;i<array.length;i++)
+   {
+       if(array[i]%2==1)
+       {
+           for(int j=i+1;j<array.length;j++)
+           {
+               if(array[j] % 2 ==0)
+               {
+                   int dist = j-i;
+                   return dist;
+               }
+           }
+           return -1;
+       }
+   }
+   return -1;
+}
